@@ -1,10 +1,10 @@
 .team-section{
-    display:grid;
-    grid-template-columns: 30px 1fr;
+    display:inline-block;
+    grid-template-columns: 1fr 1fr;
 }
 .ts-two{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .ts-three{
     display:grid;
@@ -13,14 +13,14 @@
 }
 .ts-para{
 color:var(--primary-color); 
-padding-left: 35rem; 
+display:inline-block;
 text:bold;
 font-family: var(--fontfamily);
 }
 .imgst{
-    padding: 1rem;
-    padding-left: 35rem;
+    display:inline-block;
 }
+
 .h2st{
 text-align: center;
 text:bold;
@@ -36,13 +36,13 @@ font-size:30px;
     margin: 0px;
     }
 .main-sec{
-    padding: 6rem 9rem;
+    padding: 6rem 7rem;
   
    
     }
 .tm-sec{
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
-    margin: 0vh 1vw;
+    margin: 2vh 1vw;
    
 }
 .h2st h2{
@@ -70,4 +70,10 @@ font-size:30px;
 }
 .team-member:hover{
 opacity:0.5;
+}
+.team-member{
+    width:100%
+}
+.main-c{
+    text-align: center;
 }
